@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FlashStudy</title>
+
+  <!-- Manifest -->
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.png" type="image/png" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JS -->
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h1>📚 FlashStudy</h1>
+
+  <button onclick="toggleDarkMode()">🌙 โหมดกลางคืน</button><br><br>
+
+  <label>เลือกวิชา:
+    <select id="subject-select">
+      <option value="math">คณิตศาสตร์</option>
+      <option value="science">วิทยาศาสตร์</option>
+      <option value="english">ภาษาอังกฤษ</option>
+    </select>
+  </label><br><br>
+
+  <button onclick="startQuiz()">🎲 เริ่ม Quiz</button>
+
+  <div id="quiz-container"></div>
+</body>
+</html>
